@@ -7,4 +7,6 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+I'm Jenny. A recent Durham University Chemistry graduate, currently working in Legal Technology at a City work firm. 
+
+Currently undertaking a JAMStack course with The Coders Guild, but always looking to learn, create and develop! 
