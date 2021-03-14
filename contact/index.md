@@ -4,7 +4,7 @@ title: Contact
 templateClass: tmpl-post
 eleventyNavigation:
   key: Contact
-  order: 4
+  order: Latest
 ---
 
 <form name="contact" method="POST" data-netlify="true">
