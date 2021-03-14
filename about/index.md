@@ -7,6 +7,6 @@ eleventyNavigation:
   order: 3
 ---
 
-I'm Jenny. A recent Durham University Chemistry graduate, currently working in Legal Technology at a City work firm. 
+I'm Jenny. A recent Durham University Chemistry graduate, currently working in Legal Technology at a City law firm. 
 
 Currently undertaking a JAMStack course with The Coders Guild, but always looking to learn, create and develop! 
