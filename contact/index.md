@@ -9,23 +9,23 @@ eleventyNavigation:
 
 <form name="contact" method="POST" data-netlify="true">
     <p>
-        <label class="form-label">Your Name: <input type="text" id="name" name="name" class="form-control" /></label>   
+        <label>Your Name: <input type="text" id="name" name="name" /></label>   
     </p>
     <p>
-        <label class="form-label">Your Email: <input type="email" id="email" name="email" class="form-control"/></label>
+        <label>Your Email: <input type="email" id="email" name="email" /></label>
     </p>
     <p>
-        <label class="form-label">Your Role: </label>
-        <select name="role[]" class="form-select" style="width:auto;" required>
+        <label>Your Role: <select name="role[]" multiple>
         <option value="leader">Leader</option>
         <option value="follower">Follower</option>
-        </select>
+        </select></label>
     </p>
     <p>
-        <label class="form-label">Message: <textarea name="message" class="form-control"></textarea></label>
+        <label>Message: <textarea name="message"></textarea></label>
     </p>
     <p>
-        <button class="btn btn-outline-primary" type="submit">Send</button>
+        <button class="form_submit" type="submit">Send</button>
+    </p>
 </form>
 <script>
     //get default border colours (to use on input when validation passes)
