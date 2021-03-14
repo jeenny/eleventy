@@ -4,7 +4,7 @@ title: Contact
 templateClass: tmpl-post
 eleventyNavigation:
   key: Contact
-  order: 7
+  order: 4
 ---
 
 <form name="contact" method="POST" data-netlify="true">
@@ -27,7 +27,6 @@ eleventyNavigation:
         <button class="form_submit" type="submit">Send</button>
     </p>
 </form>
-
 <script>
     //get default border colours (to use on input when validation passes)
     var borderStylePass = document.querySelector('#name').style.border;
