@@ -127,10 +127,11 @@ pre {
 
 /* Nav */
 .nav {
-  padding: 12px;
+  padding: 0px;
   list-style: none;
   float: left;
   margin-left: 1em;
+  margin-top: 12px;
 }
 .nav-item {
   display: inline-block;
