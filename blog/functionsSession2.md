@@ -96,10 +96,10 @@ function calculator(number1, number2, operator) {
     let message = '';
 
     if (typeof number1 != 'number') {
-        console.log('This is invalid');
+        console.log('Error: please enter a number');
     } 
     else if (typeof number2 != 'number') {
-        console.log('This is invalid');
+        console.log('Error: please enter a number');
     }
     else {
         switch(operator) {
@@ -130,7 +130,7 @@ function calculator(number1, number2, operator) {
     console.log(message);
 }
 
-calculator(w, w, '/');
+calculator('s', 0, '/');
 
 </script>
 

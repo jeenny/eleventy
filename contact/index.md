@@ -7,21 +7,22 @@ eleventyNavigation:
   order: Latest
 ---
 
+
 <form>
-<div class="row g-2">
-  <div class="col-md">
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
-      <label for="floatingInputGrid">First Name</label>
+  <div class="row gx-3">
+    <div class="col-md">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInputGrid">
+        <label for="floatingInputGrid">First Name</label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInputGrid">
+        <label for="floatingInputGrid">Last Name</label>
+      </div>
     </div>
   </div>
-  <div class="col-md">
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
-      <label for="floatingInputGrid">Last Name</label>
-    </div>
-  </div>
-</div>
 <div class="form-floating mb-3">
   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
   <label for="floatingInput">Email address</label>

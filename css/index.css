@@ -127,7 +127,7 @@ pre {
 
 /* Nav */
 .nav {
-  padding: 0;
+  padding: 12px;
   list-style: none;
   float: left;
   margin-left: 1em;
