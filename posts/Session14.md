@@ -1,6 +1,7 @@
 ---
 title: Session 13 - Loops, Arrays & Objects  
 description: This is a post about Loops, Arrays & Objects 
+date: 2021-03-24
 tags:
   - Javascript
 layout: layouts/post.njk

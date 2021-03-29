@@ -1,7 +1,7 @@
 ---
 title: Session 3 - Semantic HTML & Accessibility
 description: This is a post about Semantic HTML & Accessibility
-date: 2021-02-17
+date: 2021-02-15
 tags:
   - HTML
 layout: layouts/post.njk

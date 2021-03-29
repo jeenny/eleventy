@@ -1,187 +1,126 @@
 ---
-title: Session 10 - Functions and Control Flow
-description: This is a post about Functions and Control Flow
-date: 2021-03-10
+title: Session 13 - Loops, Arrays & Objects  
+description: This is a post about Loops, Arrays & Objects 
+date: 2021-03-22
 tags:
-  - JavaScript
+  - Javascript
 layout: layouts/post.njk
 ---
 
 ### Intro
 
-All functional languages follow similar rules, this session educates the learners on how to pass arguments to a function and what logic to apply to those arguments in order to return something back to the process. Understanding control flow is a huge part of the job, the learners will be taught what logic is available to them whilst problem solving.
-
+Loops arrays and objects are all important entities when creating functional code. Understanding when it may be required and how to loop through data is vital knowledge for any developer.
 
 ### Task 
 
-Challenges were given alongside the lesson.
+LOOPS
+WHILE LOOPS
+-Will repeat te same code over and over until some condition is met 
+-Avoid making infinite loops otherwise your loop will go on forever - therefore, make sure the condition changes!
 
-A function is a group of code you can reuse many times. Whenever you invoke a function by using its name, you tell the browser to run the code inside the function. You must declare it before you use it i.e. put the function above where you execute it!
+FOR LOOPS
+-Similar, but you declare a counter in the statement 
+-e.g. for (var i = 1; i <= 10; i++) {console.log(i)}; i.e. when i is 11, the loop stops
 
-Declaring Functions
---> to declare (create a function), give it a name, then include all the code inside curly brackets
-e.g. function parrotFacts() {
-    console.log('Some live to 80+ years');
-}
-
-Using functions
---> to invoke (use) a function, type its name, followed by ()
-
-Arguments
---> functions can accept input values called arguments (strings, numbers, floats etc.)
-e.g. function callKitten(kittenName) {
-    console.log('Come here, " + kittenName + "!')
-}
-where kittenName is the argument
---> you can also pass vairables into functions. These variables do not need to have the same name as function arguments 
-
+LOOPS AND LOGIC
+-We can add other statements or logical operators inside the loop 
+-i is generally used in for loops! 
+-To exit a loop, use the break statement
 
 <script>
 
-/* Task 1 */
+// Task 1: 7x tables
 
-/* everything in the curly brackets will get execute*/
+/*
+for (var i = 1; i <= 12; i++) {
+    var result = i * 7;
+    console.log(`${result} is 7 x ${i}`);
+    }
 
-function outputMessage() {
-    console.log('Output Message');
-};
-
-console.log('Task 1 start');
-console.log('------------');
-outputMessage();
-console.log('------------');
-console.log('Task 1 end');
-
-/* Task 2 */
-/* write a program to combine a first and last name inside a function */
-
-function combineStrings(){
-    var fName = 'Jenny';
-    var lName = 'Tan';
-    console.log(fName + " " + lName);
-};
-
-console.log('Task 2 start');
-console.log('------------');
-combineStrings();
-console.log('------------');
-console.log('Task 2 end');
-
-/* update the function to accept a first and last name as arguments */
-
-function combineName(firstName, lastName){
-    console.log(firstName + " " + lastName);
-};
-
-console.log('Task 2.1 start');
-console.log('------------');
-
-var fWord = 'Hello';
-var lWord = 'World';
-combineName(fWord, lWord);
-
-console.log('------------');
-console.log('Task 2.1 end');
-
-/* Task 3 */
-/* add return statement to name function */ 
-
-function combineStringsAndReturn(string1, string2) {
-    var combinedStrings = string1 + " " + string2;
-    return combinedStrings
-};
-
-console.log('Task 3 start');
-console.log('------------');
-
-var fName = 'Jenny';
-var lName = 'Tan';
-var names = combineStringsAndReturn(fName, lName);
-
-console.log(names)
-
-console.log('------------');
-console.log('Task 3 end');
+for (var i = 1; i <= 12; i++) {
+    console.log(`${i} times table`)
+    for (var j = 1; j <= 12; j++) {
+        console.log(`results is ${i * j}`)
+    }
+}
+*/
 
 </script>
 
-Returning Values 
---> we can have a function give us back a value to use later
-return statements normally come at the end of the function 
-
-Variable Scope
---> the scope determines where it;s value is accessible in the program
--global: a variable declared outside of a function has a global scope and is available on the whole page 
--local: a variable declared inside a function has a local scope and is only available inside that function 
-
-Boolean Variables
-e.g. True or False / Yess or No / 0 (false) or 1 (true)
--some values are considered 'falsy' and qill equate to false in a Boolean 
--null and NaN will also evaluate as false. everything else will be considered true 
-
-IF statements 
---> used to decide which lines of code to execue given a condition 
--can use comparison operators 
-
-ELSE statements 
---> use to provde an alternative set of instructions
-
-Logical operators 
--&& = and 
--|| = or 
--! = not 
-
+ARRAYS 
+-Ordered lists of values
+-We can put all sorts of different types of data into an array 
+-Length property tells us how many things are in an array
+-JS arrays are zero-indexed, so start counting at zero!
+-We can use bracket notation to change an item inside an array  
+-Arrays don't have a set length, so we can use push to add something to an array
+-We use a for loop to work through every item in an array 
 
 <script>
 
-/* Task 4 */
-//make a variable called temperature. write code that tells you to put on a coat if it's below 50 deg. 
+//Task 2: Favourite Foods
 
-function isCoatNeeded(temp) {
-    var message = "You don't need a coat" //default message 
+let myFavouriteFoods = [
+    'Lasagne',
+    'Ramen',
+    'Chocolate',
+    'Pizza',
+    'Strawberries'
+]
 
-    if (temp <50) {
-        var message = "Wear a coat"
-    };
+console.log(myFavouriteFoods[1]);
+console.log(myFavouriteFoods[Math.floor(Math.random() *myFavouriteFoods.length)])
 
-//can also put else {var message = "You don't need a coat"};
+//Task 3: For loop to print list of fave foods
 
-    return message;
-
-};
-
-var temp = 60;
-console.log(isCoatNeeded(temp));
-
-/* Task 4.1 */
-//if less than 50 deg, wear a coat; if less than 30 deg, wear a coat and hat; if less than 0 deg stay inside; otherwise just wear pants and vest 
-
-//use && when both terms have to be true 
-
-function whatShouldIWear(temps) {
-
-    console.log(temps < 30);
-
-    if (temps <=50 && temps >=30) {
-        var message = "Wear a coat";
-    } else if (temps <30 && temps >=0) {
-        var message = "Wear a coat and hat";
-    } else if (temps <0) {
-        var message = "Stay inside!";
-    } else {
-        var message = "Pants and vest is fine"
-    } 
-
-    return message;
-
-};
-
-var temps = 51;
-console.log(whatShouldIWear(temps));
+for(i = 0; i < myFavouriteFoods.length; i++) {
+    console.log(myFavouriteFoods[i]);
+}
 
 </script>
 
+OBJECTS
+-Lets us store a collection of properties 
+-You can have objects and arrays within objects 
+-We can retrieve values inside objects using dot notation (are nested within a level) or bracker notation
+-Can use dot or bracket notation to change properties and can override it, add new properties or delete it
 
-### Helpful Links
+<script>
 
-[freeCodeCamp Tip Calculator Walkthrough](https://www.freecodecamp.org/news/how-to-build-a-tip-calculator-with-html-css-and-javascript/)
+//Task 4: Recipe 
+
+let myRecipe = {
+    recipeTitle: 'Baked Feta Pasta',
+    servings: 4,
+    ingredients: [
+        'Pasta',
+        'Feta',
+        'Cherry Tomatoes',
+        'Basil'
+    ],
+    directions: [
+        'Bake feta cheese and tomatoes in the oven for 45 mins',
+        'Cook the pasta',
+        'Combine all ingredients and serve'
+    ],
+    letsCook: function() {
+        console.log(`I'm hungry! Let's cook ${this.recipeTitle}!`) //this = refers to the whole object you're in
+    }
+}
+
+console.log(myRecipe.recipeTitle);
+console.log(myRecipe['servings']);
+
+console.log(`Ingredients:`)
+for (i = 0; i < myRecipe.ingredients.length; i++) {
+    console.log(` - ${myRecipe.ingredients[i]}`)
+}
+
+console.log(`Directions:`)
+for (i = 0; i < myRecipe.directions.length; i++) {
+    console.log(`${i + 1}. ${myRecipe.directions[i]}`)
+}
+
+myRecipe.letsCook();
+
+</script>

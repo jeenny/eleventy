@@ -1,7 +1,7 @@
 ---
-title: Session 10 - Functions and Control Flow
+title: Session 11 - Functions and Control Flow
 description: This is a post about Functions and Control Flow
-date: 2021-03-10
+date: 2021-03-15
 tags:
   - JavaScript
 layout: layouts/post.njk
@@ -9,179 +9,145 @@ layout: layouts/post.njk
 
 ### Intro
 
-All functional languages follow similar rules, this session educates the learners on how to pass arguments to a function and what logic to apply to those arguments in order to return something back to the process. Understanding control flow is a huge part of the job, the learners will be taught what logic is available to them whilst problem solving.
+Cont. from the previous session
 
 
 ### Task 
 
-Challenges were given alongside the lesson.
-
-A function is a group of code you can reuse many times. Whenever you invoke a function by using its name, you tell the browser to run the code inside the function. You must declare it before you use it i.e. put the function above where you execute it!
-
-Declaring Functions
---> to declare (create a function), give it a name, then include all the code inside curly brackets
-e.g. function parrotFacts() {
-    console.log('Some live to 80+ years');
-}
-
-Using functions
---> to invoke (use) a function, type its name, followed by ()
-
-Arguments
---> functions can accept input values called arguments (strings, numbers, floats etc.)
-e.g. function callKitten(kittenName) {
-    console.log('Come here, " + kittenName + "!')
-}
-where kittenName is the argument
---> you can also pass vairables into functions. These variables do not need to have the same name as function arguments 
-
-
 <script>
 
-/* Task 1 */
+function percentageCalculator(number, percentage) {
+    let percentageOf = number * percentage / 100;
+    return percentageOf;
+}
 
-/* everything in the curly brackets will get execute*/
+console.log(percentageCalculator(50, 1));
 
-function outputMessage() {
-    console.log('Output Message');
-};
-
-console.log('Task 1 start');
-console.log('------------');
-outputMessage();
-console.log('------------');
-console.log('Task 1 end');
-
-/* Task 2 */
-/* write a program to combine a first and last name inside a function */
-
-function combineStrings(){
-    var fName = 'Jenny';
-    var lName = 'Tan';
-    console.log(fName + " " + lName);
-};
-
-console.log('Task 2 start');
-console.log('------------');
-combineStrings();
-console.log('------------');
-console.log('Task 2 end');
-
-/* update the function to accept a first and last name as arguments */
-
-function combineName(firstName, lastName){
-    console.log(firstName + " " + lastName);
-};
-
-console.log('Task 2.1 start');
-console.log('------------');
-
-var fWord = 'Hello';
-var lWord = 'World';
-combineName(fWord, lWord);
-
-console.log('------------');
-console.log('Task 2.1 end');
-
-/* Task 3 */
-/* add return statement to name function */ 
-
-function combineStringsAndReturn(string1, string2) {
-    var combinedStrings = string1 + " " + string2;
-    return combinedStrings
-};
-
-console.log('Task 3 start');
-console.log('------------');
-
-var fName = 'Jenny';
-var lName = 'Tan';
-var names = combineStringsAndReturn(fName, lName);
-
-console.log(names)
-
-console.log('------------');
-console.log('Task 3 end');
+/* this gives the same outcome as the item above
+function percentageCalculator(number, percentage) {
+    return = number * percentage / 100; 
+} 
+*/   
 
 </script>
 
-Returning Values 
---> we can have a function give us back a value to use later
-return statements normally come at the end of the function 
+IF ELSEIF ELSE STATEMENTS
+These statements execute logic in the order provided, but if none of the conditions are met, the ELSE statement is executed. But the else statement can be excluded if not required 
 
-Variable Scope
---> the scope determines where it;s value is accessible in the program
--global: a variable declared outside of a function has a global scope and is available on the whole page 
--local: a variable declared inside a function has a local scope and is only available inside that function 
+<script>
 
-Boolean Variables
-e.g. True or False / Yess or No / 0 (false) or 1 (true)
--some values are considered 'falsy' and qill equate to false in a Boolean 
--null and NaN will also evaluate as false. everything else will be considered true 
+function outputSomething(x) {
+    if (x == 5) {
+        console.log('yay');
+    }
+    else if (x == 7) {
+        console.log('nay');
+    }
+    else {
+        console.log('um');
+    }
+}
 
-IF statements 
---> used to decide which lines of code to execue given a condition 
--can use comparison operators 
+outputSomething(5);
 
-ELSE statements 
---> use to provde an alternative set of instructions
+</script>
 
-Logical operators 
--&& = and 
--|| = or 
--! = not 
+SWTICH STATEMENTS 
+Similar to IF statements. They can be declared to cover a number of different cases. If you are always going to be providing an output based on the same input, switch statements are simpler to read and wite than IF ELSE. Switch more useful when using distinct values.
+
+<script>
+
+function doesSomethingElse(x) {
+    switch(x) {
+        case 10:
+            console.log('x is 10');
+            break;
+        case 100:
+            consolte.log('x is 100');
+            break;
+        default:
+            consolte.log('something else');
+    }
+}
+
+doesSomethingElse(10); 
+
+
+//Task: Drinks Order
+function drinkOrder(size, drink) {
+    let message = "You have ordered a " + size + " " + drink + ". Enjoy! "
+
+    switch(drink) {
+        case "cola":
+            console.log(message + "The " + drink + " is amazing!");
+            break;
+        case "lemonade":
+            console.log(message + "The " + drink + " is fresh!");
+            break;
+        case "orangeade":
+            console.log(message + "The " + drink + " is cool!");
+            break;
+        default:
+            console.log("I'm sorry, we don't serve " + size + " " + drink + " here.");
+    }
+}
+
+console.log(drinkOrder("large", "lemonade"));
+
+</script>
 
 
 <script>
 
-/* Task 4 */
-//make a variable called temperature. write code that tells you to put on a coat if it's below 50 deg. 
+//Task: Calculator 
 
-function isCoatNeeded(temp) {
-    var message = "You don't need a coat" //default message 
+function calculator(number1, number2, operator) {
+    let message = '';
 
-    if (temp <50) {
-        var message = "Wear a coat"
-    };
-
-//can also put else {var message = "You don't need a coat"};
-
-    return message;
-
-};
-
-var temp = 60;
-console.log(isCoatNeeded(temp));
-
-/* Task 4.1 */
-//if less than 50 deg, wear a coat; if less than 30 deg, wear a coat and hat; if less than 0 deg stay inside; otherwise just wear pants and vest 
-
-//use && when both terms have to be true 
-
-function whatShouldIWear(temps) {
-
-    console.log(temps < 30);
-
-    if (temps <=50 && temps >=30) {
-        var message = "Wear a coat";
-    } else if (temps <30 && temps >=0) {
-        var message = "Wear a coat and hat";
-    } else if (temps <0) {
-        var message = "Stay inside!";
-    } else {
-        var message = "Pants and vest is fine"
+    if (typeof number1 != 'number') {
+        console.log('Error: please enter a number');
     } 
+    else if (typeof number2 != 'number') {
+        console.log('Error: please enter a number');
+    }
+    else {
+        switch(operator) {
+            case '+':
+                message = number1 + number2;
+                break;
+            case '-':
+                message = number1 - number2;
+                break;
+            case '*':
+                message = number1 * number2;
+                break;
+            case '/':
+                if (number2 == 0) {
+                    console.log('Error: you cannot divide by zero!');
+                }
+                else {
+                message = number1 / number2;
+                }
+                break; 
+            case '%':
+                message = number1 % number2;
+                break; 
+            default:
+                message = "I'm unsure...";
+        }
+    }
+    console.log(message);
+}
 
-    return message;
-
-};
-
-var temps = 51;
-console.log(whatShouldIWear(temps));
+calculator('s', 0, '/');
 
 </script>
 
+TYPEOF
+Returns a string indicating the type of the unevaluated operand and the typeof operator is followed by its operand.
 
-### Helpful Links
-
-[freeCodeCamp Tip Calculator Walkthrough](https://www.freecodecamp.org/news/how-to-build-a-tip-calculator-with-html-css-and-javascript/)
+isNaN
+A global variable, can also check for this --> if isNaN() returns false, the value is a number 
+i.e. for const value = 2
+    isNan(value) //false
+    isNaN(1.2) //true 
