@@ -1,9 +1,16 @@
 ---
-layout: layouts/blog.njk
-tags: blog
-title: Session 14 - Loops, Arrays, Objects - Practical 
-date: 2021-03-14T18:51:23.347Z
+title: Session 13 - Loops, Arrays & Objects  
+description: This is a post about Loops, Arrays & Objects 
+tags:
+  - Javascript
+layout: layouts/post.njk
 ---
+
+### Intro
+
+Loops arrays and objects are all important entities when creating functional code. Understanding when it may be required and how to loop through data is vital knowledge for any developer.
+
+### Task 
 
 Work in VSC
 
@@ -174,7 +181,7 @@ console.log(median(myMedianNumbers));
 
 
 //Next task 
-var myModeNumbers = [1, 1, 2, 3, 3, 4, 4, 5];
+var myModeNumbers = [1, 2, 3, 3, 4, 4, 5];
 
 function mode(numbers3) {
     let modes = [];
