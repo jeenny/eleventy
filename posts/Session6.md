@@ -1,21 +1,21 @@
 ---
-title: Session 3 - Semantic HTML & Accessibility
-description: This is a post about Semantic HTML & Accessibility
-date: 2021-02-17
+title: Session 6 - Git Workflows
+description: This is a post about Git
+date: 2021-02-24
 tags:
-  - HTML
+  - Git
+  - Bootstrap
 layout: layouts/post.njk
 ---
 
 ### Intro
 
-1/4 people are affected by a disability. The web isn’t meant to be exclusive, writing semantic HTML means all software/ hardware created to assist people with disabilities has a like codebase to work on
+This session will expose the learners to more information about git and how it works. This is very good practise as they will be fetching a repo onto their machine and making changes and uploading them via git. This is turn will update the static site on netlify which will also expose the students to a complete deployment process.
 
 ### Task 
 
-To recreate this [table](https://github.com/thecodersguilduk/semantic-html-challenge) in HTML and style with CSS. My attempt is [here](https://jeenny.github.io/semantic-html-challenge/)!
+Add Bootstrap elements to this site, using branches and making detailed commits
 
 ### Helpful links
 
-[freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/#applied-accessibility)
-[MDN](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
+[Bootstrap](https://getbootstrap.com/)
