@@ -119,19 +119,5 @@ function fizzBuzz() {
 //      ELSE    
 //          PRINT book
 
-function bookshelf() {
-    var book1 = {name: 'sapiens', author: 'yuval noah harari', read: true}
-    var book2 = {name: 'a little life', author: 'hanya yanagihara', read: false}
-    var book3 = {name: 'factfulness', author: 'hans rosling', read: false}
-
-    for () {
-        if (read === true) {
-            console.log('you already read ' + name + ' by ' + author)
-        }
-        else if (read === false) {
-            console.log('you still need to read ' + name + ' by ' + author)
-        }
-    } 
-}
 
 </script>

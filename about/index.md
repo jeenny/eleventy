@@ -4,7 +4,7 @@ title: About Me
 templateClass: tmpl-post
 eleventyNavigation:
   key: About Me
-  order: 3
+  order: 2
 ---
 
 I'm Jenny. A recent Durham University Chemistry graduate, currently working in Legal Technology at a City law firm. 
