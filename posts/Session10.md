@@ -19,21 +19,21 @@ Challenges were given alongside the lesson.
 A function is a group of code you can reuse many times. Whenever you invoke a function by using its name, you tell the browser to run the code inside the function. You must declare it before you use it i.e. put the function above where you execute it!
 
 Declaring Functions
---> to declare (create a function), give it a name, then include all the code inside curly brackets
+* to declare (create a function), give it a name, then include all the code inside curly brackets
 e.g. function parrotFacts() {
     console.log('Some live to 80+ years');
 }
 
 Using functions
---> to invoke (use) a function, type its name, followed by ()
+* to invoke (use) a function, type its name, followed by ()
 
 Arguments
---> functions can accept input values called arguments (strings, numbers, floats etc.)
+* functions can accept input values called arguments (strings, numbers, floats etc.)
 e.g. function callKitten(kittenName) {
     console.log('Come here, " + kittenName + "!')
 }
 where kittenName is the argument
---> you can also pass vairables into functions. These variables do not need to have the same name as function arguments 
+* you can also pass vairables into functions. These variables do not need to have the same name as function arguments 
 
 
 <script>
@@ -106,30 +106,30 @@ console.log('Task 3 end');
 </script>
 
 Returning Values 
---> we can have a function give us back a value to use later
+* we can have a function give us back a value to use later
 return statements normally come at the end of the function 
 
 Variable Scope
---> the scope determines where it;s value is accessible in the program
--global: a variable declared outside of a function has a global scope and is available on the whole page 
--local: a variable declared inside a function has a local scope and is only available inside that function 
+* the scope determines where it;s value is accessible in the program
+  * global: a variable declared outside of a function has a global scope and is available on the whole page 
+  * local: a variable declared inside a function has a local scope and is only available inside that function 
 
 Boolean Variables
 e.g. True or False / Yess or No / 0 (false) or 1 (true)
--some values are considered 'falsy' and qill equate to false in a Boolean 
--null and NaN will also evaluate as false. everything else will be considered true 
+* some values are considered 'falsy' and qill equate to false in a Boolean 
+* null and NaN will also evaluate as false. everything else will be considered true 
 
 IF statements 
---> used to decide which lines of code to execue given a condition 
+* used to decide which lines of code to execue given a condition 
 -can use comparison operators 
 
 ELSE statements 
---> use to provde an alternative set of instructions
+* use to provde an alternative set of instructions
 
 Logical operators 
--&& = and 
--|| = or 
--! = not 
+* && = and 
+* || = or 
+* ! = not 
 
 
 <script>

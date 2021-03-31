@@ -14,11 +14,11 @@ Comments are breadcrumbs for other developers or the same developer in the futur
 ### Task 
 
 RECAP
-Arrays: a series of memory locations each of which holds a single item of data, but with each box sharing the same name. All data in an array must be of the same data type 
-e.g. var myArray = [2, 4, 6];
+*   Arrays: a series of memory locations each of which holds a single item of data, but with each box sharing the same name. All data in an array must be of the same data type 
+    *   e.g. var myArray = [2, 4, 6];
 myArray[0] will return '2'
 
-Objects: a way of grouping things together (a little different to an array) as you can group different fields together 
+*   Objects: a way of grouping things together (a little different to an array) as you can group different fields together 
 
 e.g. var joe = {age: 50, givenName: 'Joe', familyName: 'Blogs'}
     var jane = {age: 39, givenName: 'Jane', familyName: 'Doe'}
@@ -34,39 +34,39 @@ Functions: group of code that is reusable
 Control flow: the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated. Making the program dynamic 
 
 COMMENTS
--Often Pseudocode is written in comments within a file that may already exist on a site
--Commenting is slightly different depending on what language you're coding in 
--So even though there's no syntax as such, you may need to know what to comment in a particular language 
--Used to help you in the future/ other developers to aid understanding 
--Though try to make code self describing 
+*   Often Pseudocode is written in comments within a file that may already exist on a site
+*   Commenting is slightly different depending on what language you're coding in 
+*   So even though there's no syntax as such, you may need to know what to comment in a particular language 
+*   Used to help you in the future/ other developers to aid understanding 
+*   Though try to make code self describing 
 HOW TO COMMENT 
--JS comments: /* text */ for multiple lines; // for single lines (can select text and cmd+/)
--CSS comments: /* text */ for one and multiple lines 
--HTML <!-- text -->
+*   JS comments: /* text */ for multiple lines; // for single lines (can select text and cmd+/)
+*   CSS comments: /* text */ for one and multiple lines 
+*   HTML <!-- text -->
 
 PSEUDOCODE
--Language agnostic
--A learning and reasoning tools (not actual program)
--Used to help developers understand a problem and draft code solutions
--Helps us concentrate on solving the problem without being bogged down by specifics e.g. syntax, standards, language, framework 
+*   Language agnostic
+*   A learning and reasoning tools (not actual program)
+*   Used to help developers understand a problem and draft code solutions
+*   Helps us concentrate on solving the problem without being bogged down by specifics e.g. syntax, standards, language, framework 
 ADVANTAGES
--Focus on the problem
--Communication and discussion
--Anticipate problems, issues, questions etc. 
--Help break problems down
+*   Focus on the problem
+*   Communication and discussion
+*   Anticipate problems, issues, questions etc. 
+*   Help break problems down
 
 HOW TO WRITE PSEUDOCODE
--Capitalise key commands i.e. (IF number >100 THEN do this)
--Write one statement per line
--Use indentation and spacing
--Be specific
--Keep it simple/ non techy - just trying to get the essence of something 
+*   Capitalise key commands i.e. (IF number >100 THEN do this)
+*   Write one statement per line
+*   Use indentation and spacing
+*   Be specific
+*   Keep it simple/ non techy - just trying to get the essence of something 
 
 FIZZBUZZ
--Write program that prints 1-100 on a new line
--For each multiple of 3, print FIZZ
--For each multiple of 5, print BUZZ
--For numbers that are multiples of both, print FIZZBUZZ
+*   Write program that prints 1-100 on a new line
+*   For each multiple of 3, print FIZZ
+*   For each multiple of 5, print BUZZ
+*   For numbers that are multiples of both, print FIZZBUZZ
 
 <script>
 

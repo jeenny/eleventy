@@ -32,7 +32,7 @@ function percentageCalculator(number, percentage) {
 </script>
 
 IF ELSEIF ELSE STATEMENTS
-These statements execute logic in the order provided, but if none of the conditions are met, the ELSE statement is executed. But the else statement can be excluded if not required 
+*   These statements execute logic in the order provided, but if none of the conditions are met, the ELSE statement is executed. But the else statement can be excluded if not required 
 
 <script>
 
@@ -53,7 +53,7 @@ outputSomething(5);
 </script>
 
 SWTICH STATEMENTS 
-Similar to IF statements. They can be declared to cover a number of different cases. If you are always going to be providing an output based on the same input, switch statements are simpler to read and wite than IF ELSE. Switch more useful when using distinct values.
+*   Similar to IF statements. They can be declared to cover a number of different cases. If you are always going to be providing an output based on the same input, switch statements are simpler to read and wite than IF ELSE. Switch more useful when using distinct values.
 
 <script>
 
@@ -144,10 +144,10 @@ calculator('s', 0, '/');
 </script>
 
 TYPEOF
-Returns a string indicating the type of the unevaluated operand and the typeof operator is followed by its operand.
+*   Returns a string indicating the type of the unevaluated operand and the typeof operator is followed by its operand.
 
 isNaN
-A global variable, can also check for this --> if isNaN() returns false, the value is a number 
+*   A global variable, can also check for this --> if isNaN() returns false, the value is a number 
 i.e. for const value = 2
     isNan(value) //false
     isNaN(1.2) //true 
