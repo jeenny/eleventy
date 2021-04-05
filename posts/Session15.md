@@ -29,6 +29,9 @@ The DOM
     *   nb. getElement will return a single node, getElements will return an array of nodes
 *   We can access and change attributes of DOM nodes using dot notation. You can override items using this
 * We can also target one specific element's content
+* querySelector = returns first item found in the whole page 
+* querySelectorAll = returns all items found in the whole page 
+  * nb. same with getElement(s) 
  
 <script>
   <img id='cake' src='img/cake.jpg' alt='pic of cake'/>
@@ -58,4 +61,4 @@ Current Target
 User Input
 * We can collect info from our users to use in our code, most commonly done through HTML forms 
 
-[TO DO: rewatch video for rest of tasks]
+Code is at this [link](https://github.com/jeenny/DOM-session15)
